@@ -1,0 +1,17 @@
+node_modules/
+dist/
+data/*
+!data/.gitkeep
+.run/*
+!.run/.gitkeep
+.run/tmpcheck.cjs
+.run/dbg.mts
+.run/httpdbg.mts
+.run/t.test.ts
+.run/argv.mts
+.run/*.log
+.run/*.txt
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+npm-debug.log*

@@ -1,0 +1,28 @@
+{
+  "name": "leontief-io-shock",
+  "version": "1.0.0",
+  "description": "Windows-local multi-sector open Leontief input-output and demand shock assessment backend (API + CLI).",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "io-cli": "dist/src/cli/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "tsx src/api/server.ts",
+    "cli": "tsx src/cli/cli.ts",
+    "test": "tsx --test tests/*.test.ts",
+    "demo": "tsx scripts/demo.ts",
+    "migrate": "tsx src/db/migrate.ts",
+    "clean": "node scripts/clean.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
