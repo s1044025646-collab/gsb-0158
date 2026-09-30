@@ -1,0 +1,26 @@
+{
+  "name": "io-shock-eval",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Local multi-sector input-output and demand-shock evaluation backend (open Leontief model)",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "bin": {
+    "io-eval": "./src/cli/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test --test-reporter=spec test/*.test.ts",
+    "demo": "node --import tsx scripts/demo.ts",
+    "start": "node --import tsx src/server.ts",
+    "stop": "node --import tsx scripts/stop.ts",
+    "clean": "node --import tsx scripts/clean.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
